@@ -1,45 +1,36 @@
 <template>
-  <div>
-    <footer class="bg-gray-600 px-12 py-8 mt-12 flex gap-12 justify-end">
+  <footer class="bg-transparent px-12 py-6 mt-6">
+    <div class="flex items-center justify-between">
       <div>
-        <h2 class="font-semibold">LINKS</h2>
-        <div class="flex flex-col gap-2 mt-2">
-          <a href="#" class="text-gray-400 hover:text-gray-300">Instagram</a>
-          <a href="#" class="text-gray-400 hover:text-gray-300">Twitter</a>
-          <a href="#" class="text-gray-400 hover:text-gray-300">Facebook</a>
-        </div>
+        <h1 class="text-3xl font-semibold font-inter">DJACKETS</h1>
+      </div>
+      <div class="flex items-center gap-4">
+        <router-link to="/">Summer</router-link>
+        <router-link to="/">Winter</router-link>
+        <router-link to="/">Spring</router-link>
+        <router-link to="/">Discounts</router-link>
+        <router-link to="/">Products</router-link>
+      </div>
+      <div class="flex items-center gap-3">
+        <i class="bx bxl-instagram bx-md"></i>
+        <i class="bx bxl-facebook bx-md"></i>
+        <i class="bx bxl-twitter bx-md"></i>
+      </div>
+    </div>
+    <hr class="w-full mt-6" />
+    <div class="flex items-center justify-between mt-6">
+      <div>
+        <h2 class="text-sm text-gray-300">
+          © 2023 Djackets. All rights reserved. Created by Bryan Mureithi
+        </h2>
       </div>
       <div>
-        <h2 class="font-semibold">PRODUCTS</h2>
-        <div class="flex flex-col gap-2 mt-2">
-          <a href="#" class="text-gray-400 hover:text-gray-300"
-            >Winter Jackets</a
-          >
-          <a href="#" class="text-gray-400 hover:text-gray-300"
-            >Summer Jackets</a
-          >
-          <a href="#" class="text-gray-400 hover:text-gray-300"
-            >Men's Jackets</a
-          >
-        </div>
+        <a href="#" class="text-sm text-gray-300"
+          >Privacy Policy | Terms of Service</a
+        >
       </div>
-      <div>
-        <h2 class="font-semibold">CONTACTS</h2>
-        <div class="flex flex-col gap-2 mt-2">
-          <a href="#" class="text-gray-400 hover:text-gray-300"
-            ><span>Tel: </span> +2547324657</a
-          >
-          <a href="#" class="text-gray-400 hover:text-gray-300"
-            ><span>Address: </span>Bogani Rd, Karen.</a
-          >
-          <a href="#" class="text-gray-400 hover:text-gray-300"
-            ><span>Email: </span>djackets@info.com</a
-          >
-        </div>
-      </div>
-    </footer>
-    <router-view />
-  </div>
+    </div>
+  </footer>
 </template>
 
 <script>

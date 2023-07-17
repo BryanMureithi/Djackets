@@ -1,6 +1,6 @@
 <template>
   <div class="login flex items-center justify-center mt-12">
-    <div class="bg-white text-gray-700 px-12 py-16 flex gap-3">
+    <div class="bg-gray-100 text-gray-700 px-12 py-16 flex gap-3">
       <div>
         <h2 class="text-2xl font-semibold text-gray-600 mt-8">
           Sign Up to browse jackets
@@ -9,8 +9,8 @@
           Our registration process is quick and easy, taking no more than 10
           minutes to complete.
         </p>
-        <div class="bg-gray-700 w-9/12 px-6 py-12 rounded-lg mt-8">
-          <p>Djackets is a recommendable ecommerce platform</p>
+        <div class="mt-8">
+          <img src="../assets/jacket-hero.jpg" alt="image" class="h-64 w-100" />
         </div>
       </div>
       <div class="w-72 mr-12">
@@ -18,30 +18,30 @@
         <p class="text-gray-700 text-sm mt-4">Create your account now</p>
         <form action="" class="mt-8">
           <div class="mt-6">
-            <label for="fname" class="block text-sm"> Full name </label>
             <input
               type="text"
               name="fname"
               id="fname"
-              class="border border-gray-600 rounded h-9 w-72"
+              class="border-b-2 border-gray-600 bg-transparent h-9 w-72 focus:outline-none"
+              placeholder="Fullname"
             />
           </div>
           <div class="mt-6">
-            <label for="email" class="block text-sm"> Email </label>
             <input
               type="email"
               name="email"
               id="email"
-              class="border border-gray-600 rounded h-9 w-72"
+              class="border-b-2 border-gray-600 bg-transparent h-9 w-72 focus:outline-none"
+              placeholder="Email Address"
             />
           </div>
           <div class="mt-6">
-            <label for="pass" class="block text-sm"> Password </label>
             <input
               type="password"
               name="pass"
               id="pass"
-              class="border border-gray-600 rounded h-9 w-72"
+              class="border-b-2 border-gray-600 bg-transparent h-9 w-72 focus:outline-none"
+              placeholder="Password"
             />
           </div>
           <button
