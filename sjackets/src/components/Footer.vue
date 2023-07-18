@@ -2,7 +2,7 @@
   <footer class="bg-transparent px-12 py-6 mt-6">
     <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-3xl font-semibold font-inter">DJACKETS</h1>
+        <h1 class="text-3xl font-raleway">DJACKETS</h1>
       </div>
       <div class="flex items-center gap-4">
         <router-link to="/">Summer</router-link>

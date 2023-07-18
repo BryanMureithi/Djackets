@@ -14,7 +14,7 @@
           <h3 class="mt-2 font-semibold">{{ product.name }}</h3>
           <p class="mt-1 font-semibold text-gray-400">${{ product.price }}</p>
 
-          View details
+          <router-link :to="product.get_absolute_url">View details</router-link>
         </div>
       </div>
     </div>
