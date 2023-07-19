@@ -1,27 +1,18 @@
 <template>
-  <div class="min-h-screen px-12 py-8">
+  <div class="min-h-screen px-12">
     <div class="flex ml-12">
-      <div class="w-4/12">
-        <figure class="">
-          <img
-            :src="product.get_image"
-            alt="Product Image"
-            class="img rounded-lg h-full"
-          />
-        </figure>
-
-        <h1>{{ product.name }}</h1>
-
-        <p>{{ product.description }}</p>
+      <div class="w-8/12 px-4 py-10">
+        <img
+          :src="product.get_image"
+          alt="Product Image"
+          class="img rounded-lg"
+        />
       </div>
-      <div class="px-6 py-6">
-        <h2 class="w-8/12">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
-          magnam eaque, vitae animi error odit laborum sequi illum veritatis
-          explicabo!
-        </h2>
+      <div class="py-12">
+        <h1 class="text-3xl font-semibold">{{ product.name }}</h1>
 
-        <p class="mt-4 font-bold">${{ product.price }}</p>
+        <p class="mt-6 w-8/12">{{ product.description }}</p>
+        <p class="mt-6 text-4xl font-bold">${{ product.price }}</p>
 
         <div class="flex items-center mt-5">
           <div>
@@ -31,13 +22,13 @@
               id="quantity"
               min="1"
               v-model="quantity"
-              class="text-black"
+              class="text-black py-1"
             />
           </div>
           <div>
             <router-link
               to="/"
-              class="bg-gray-400 text-black px-4 py-1 rounded-md"
+              class="bg-gray-400 text-black text-sm px-4 py-2 rounded-md"
               >Add to cart</router-link
             >
           </div>
@@ -81,6 +72,8 @@ export default {
 
 <style>
 .img {
-  max-width: 100%;
+  width: 80%;
+  height: 70%;
+  object-fit: cover;
 }
 </style>
