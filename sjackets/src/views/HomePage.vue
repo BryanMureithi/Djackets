@@ -91,6 +91,9 @@
       <h2 class="font-semibold font-inter">NEW ARRIVALS</h2>
       <JacketCard />
     </div>
+    <div class="mt-6">
+      <PromoSection />
+    </div>
     <FooterMain />
     <router-view />
   </div>
@@ -99,9 +102,10 @@
 <script>
 import JacketCard from "../components/Card.vue";
 import FooterMain from "../components/Footer.vue";
+import PromoSection from "../components/Promo.vue";
 export default {
   name: "HomePage",
-  components: { JacketCard, FooterMain },
+  components: { JacketCard, FooterMain, PromoSection },
 };
 </script>
 

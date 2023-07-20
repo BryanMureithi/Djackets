@@ -6,7 +6,7 @@
         <router-link to="/" class="text-sm p-2 border-b-2 hover:text-gray-400"
           >Home</router-link
         >
-        <router-link to="/about" class="text-sm p-2 hover:text-gray-400"
+        <router-link to="/products" class="text-sm p-2 hover:text-gray-400"
           >Products</router-link
         >
         <router-link to="/about" class="text-sm p-2 hover:text-gray-400"

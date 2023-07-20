@@ -25,3 +25,10 @@ class ProductDetailView(APIView):
         product = self.get_object(category_slug, product_slug)
         serializer = ProductSerializer(product)
         return Response(serializer.data)    
+    
+class ProductsList(APIView):
+
+    def get(self, request,  format=None):
+        productss = Product.objects.all()
+        serializer = ProductSerializer(productss, many=True)
+        return Response(serializer.data)    
