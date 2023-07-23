@@ -21,7 +21,13 @@
     <div class="flex items-center justify-between mt-6">
       <div>
         <h2 class="text-sm text-gray-300">
-          © 2023 Djackets. All rights reserved. Created by Bryan Mureithi
+          © 2023 Djackets. All rights reserved.
+        </h2>
+      </div>
+      <div>
+        <h2 class="text-sm text-gray-300">
+          Created by
+          <span class="text-blue-500 cursor-pointer">Bryan Mureithi</span>.
         </h2>
       </div>
       <div>

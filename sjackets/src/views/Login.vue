@@ -1,6 +1,6 @@
 <template>
   <div class="login flex items-center justify-center mt-12">
-    <div class="bg-gray-100 text-gray-700 px-12 py-16 flex gap-3">
+    <div class="bg-gray-300 rounded-md text-gray-700 px-12 py-16 flex gap-3">
       <div>
         <h2 class="text-2xl font-semibold text-gray-600 mt-8">
           Sign In to browse jackets

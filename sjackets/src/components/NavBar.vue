@@ -20,6 +20,9 @@
         >
       </div>
       <div class="flex items-center gap-8">
+        <router-link to="/login" class="text-sm hover:text-gray-400">
+          <i class="bx bx-cart bx-sm"></i>
+        </router-link>
         <router-link to="/login" class="text-sm hover:text-gray-400"
           >Sign in</router-link
         >

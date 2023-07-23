@@ -12,7 +12,7 @@
         <h1 class="text-3xl font-semibold">{{ product.name }}</h1>
 
         <p class="mt-6 w-8/12">{{ product.description }}</p>
-        <p class="mt-6 text-4xl font-bold">${{ product.price }}</p>
+        <p class="mt-6 text-4xl font-inter font-bold">${{ product.price }}</p>
 
         <div class="flex items-center mt-5">
           <div>
@@ -28,10 +28,16 @@
           <div>
             <router-link
               to="/"
-              class="bg-gray-400 text-black text-sm px-4 py-2 rounded-md"
+              class="bg-gray-400 ml-4 text-black text-sm px-4 py-2 rounded-md"
               >Add to cart</router-link
             >
           </div>
+        </div>
+        <div class="mt-6">
+          <h3 class="font-inter">
+            <span class="text-green-400">In Stock.</span> Grab yours while they
+            are still available!
+          </h3>
         </div>
       </div>
     </div>
