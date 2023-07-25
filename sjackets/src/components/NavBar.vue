@@ -20,8 +20,12 @@
         >
       </div>
       <div class="flex items-center gap-8">
-        <router-link to="/login" class="text-sm hover:text-gray-400">
+        <router-link
+          to="/login"
+          class="text-sm flex items-center gap-2 hover:text-gray-400"
+        >
           <i class="bx bx-cart bx-sm"></i>
+          <span class="text-lg">(0)</span>
         </router-link>
         <router-link to="/login" class="text-sm hover:text-gray-400"
           >Sign in</router-link
@@ -40,5 +44,27 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      items: [],
+    };
+  },
+  beforeCreate() {
+    this.$store.commit("initializeStore");
+  },
+  mounted() {
+    this.cart = this.$store.state.cart;
+  },
+  computed: {
+    cartTotalLength() {
+      let totalLength = 0;
+
+      for (let i = 0; i < this.cart.items.length; i++) {
+        totalLength += this.cart.items[i].quantity;
+      }
+
+      return totalLength;
+    },
+  },
 };
 </script>

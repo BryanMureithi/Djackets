@@ -26,11 +26,12 @@
             />
           </div>
           <div>
-            <router-link
-              to="/"
+            <button
+              @click="addToCart"
               class="bg-gray-400 ml-4 text-black text-sm px-4 py-2 rounded-md"
-              >Add to cart</router-link
             >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="mt-6">
@@ -71,6 +72,18 @@ export default {
         .catch((error) => {
           console.log("Error getting products:", error);
         });
+    },
+    addToCart() {
+      if (isNaN(this.quantity) || this.quantity < 1) {
+        this.quantity = 1;
+      }
+
+      const item = {
+        product: this.product,
+        quantity: this.quantity,
+      };
+
+      this.$store.commit("addToCart", item);
     },
   },
 };
